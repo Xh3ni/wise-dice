@@ -46,4 +46,10 @@ function incrementPlayerResult() {
     document.getElementById("player-result").innerText = ++oldScore;
 }
 
-function incrementComputerResult() {}
+/**
+ * Gets the current score from the DOM and increments Computers result by 1
+ */
+function incrementComputerResult() {
+    let oldScore = parseInt(document.getElementById("computer-result").innerText);
+    document.getElementById("computer-result").innerText = ++oldScore;
+}

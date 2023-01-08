@@ -24,7 +24,9 @@ function rollDice() {
     document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 
-    //If player wins
+  /**
+   * If player win
+   */
     if (randomNumber1 === randomNumber2) {
         document.querySelector("h1").innerHTML = "Draw!";
     } else if (randomNumber1 > randomNumber2) {
@@ -36,6 +38,12 @@ function rollDice() {
     }
 }
 
-function incrementPlayerResult() {}
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementPlayerResult() {
+    let oldScore = parseInt(document.getElementById("player-result").innerText);
+    document.getElementById("player-result").innerText = ++oldScore;
+}
 
 function incrementComputerResult() {}

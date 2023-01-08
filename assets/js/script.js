@@ -24,16 +24,16 @@ function rollDice() {
     document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 
-  /**
-   * If player win
-   */
+    /**
+     * If player win
+     */
     if (randomNumber1 === randomNumber2) {
         document.querySelector("h1").innerHTML = "Draw!";
     } else if (randomNumber1 > randomNumber2) {
-        document.querySelector("h1").innerHTML = "You won! Congratulations!";
+        document.querySelector("h1").innerHTML = "You won! 🎉";
         incrementPlayerResult();
     } else if (randomNumber2 > randomNumber1) {
-        document.querySelector("h1").innerHTML = "Ohhh nooo.... :( Try again!";
+        document.querySelector("h1").innerHTML = "Ohhh nooo.... ☹️ Try again!";
         incrementComputerResult();
     }
 }

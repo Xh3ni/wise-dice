@@ -1,108 +1,129 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Roll the Wise Dice
 
-Welcome Xh3ni,
+Roll the Wise Dice is an online game designed for all age groups, for adults and children. The game is between you (the player) and the computer. To start the game you must click the "Roll" button. If the number on the player's dice is greater than the number on the computer's dice, congratulations, you are the winner. One point will be added to the score for you (the player).
+If the number on the player's dice is lower than the number on the computer's dice, you have lost, try again. One point will be added to the score for the computer.
+If the numbers on both dice are the same, it is a draw. The score does not change.
+The game can last indefinitely, there is no time limit.
+If you want to start a new game, refresh the page.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![The Wise Dice shown on a range of devices](assets/docs/responisive-wise-dice.PNG)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+## Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* [Features](#features)
+  * [Header](#header)
+  * [The Game Area](#game-area)
+  * [The Game Results](#game-results)
+  * [The Footer](#footer)
+* [Wireframes](#wireframes)
+* [Design](#design)
+  * [Colours](#colours)
+  * [Typography](#typography)
+* [Testing](#testing)
+  * [Manual Testing](#manual-testing)
+  * [Validation](#validation)
+* [Deployment](#deployment)
+  * [Development process](#development-process)
+* [Credits](#credits)
+* [Acknowledgments](#acknowledgments)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## FEATURES  
 
-Another blue button should appear to click: _Open Browser_.
+### Header 
+![Header](assets/docs/header.PNG)
+- The header shows the game name: The Wise Dice. It is at the top of the page and clearly contrasts with the background.
+- When the game starts, the header change on: You Won!; Oh nooo... Try again!; Draw!; according to the result of the game.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![The Game Area](assets/docs/game-area.PNG)
+- At the game area there are clear instructon to start and play the game. The player is against the Computer. To start the game all you need to do is to click the button "Roll". After that a message will appear at the header if you are won/loose/draw. 
 
-A blue button should appear to click: _Make Public_,
+- This section provides two images of dices and a button that the user can click to start and play the game. 
 
-Another blue button should appear to click: _Open Browser_.
+### The Game Results
+![The Game Results](assets/docs/game-results.PNG)
+- When the user clicks the "Roll" button, the images of the dices shown a random dice number on the game board. 
+- If the number on the player's dice is greater than the number on the computer's dice, congratulations, you are the winner. 
+- One point will be added to the score for you (the player).
+- If the number on the player's dice is lower than the number on the computer's dice, you have lost, try again. 
+- One point will be added to the score for the computer.
+- If the numbers on both dice are the same, it is a draw. - - The score does not change.
+- The game can last indefinitely, there is no time limit.
+- If you want to start a new game, refresh the page.
+- The results are clear to the user, making the game easy to play, undersand who won, and wha the score is.  
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### The Footer
+![Footer](assets/docs/footer.PNG)
+- The footer section shows the creator of the game.
 
-To log into the Heroku toolbelt CLI:
+## Wireframes  
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Wireframes were created for desktop version of the game with the Program [Balsamiq](https://balsamiq.com/).
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+[Image of the wireframes](assets/docs/wireframes/wireframes.PNG)
 
-------
+## Design  
 
-## Release History
+### Colours  
+![Colour Palette](assets/docs/natural-palette.PNG)
+- The game uses a palette of Natural Palette.
+- The Tropical Rain Forest is used for heading, pharagraphs and the background-color of the button.
+- Parchment is used for the backgroung-color of the body.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Typography  
+- For the heading is used the font Lobster
+- For the pharagraphs and button, is used the font Indie Flower.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Testing   
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Manual Testing  
+- I tested playing this game in different browsers: Chrome, Firefox, Edgeand Safari.
+- I confirmed that the game results are alwasy correct
+- I confirmed that the header, instructions, results and footer text are all readable and easy to understand.
+- I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+#### Lighthouse  
+![Lighthouse Validation](assets/docs/validators/lighthouse-raport.PNG)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Validatior Testing 
+#### HTML  
+![W3C HTML Validator](assets/docs/validators/html-validator.PNG)     
+There were no errors found on any page using the W3C HTML Validator.
+#### CSS  
+![W3C CSS Validator](assets/docs/validators/css-validator.PNG)  
+There were no errors found in the stylesheet using the W3C CSS Validator.
+#### JavaScript
+![JS Hint Validator](assets/docs/validators/js-validator.PNG)  
+There were no errors found in the script using the JS Hint Validator. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Deployment  
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The site was deployed using GitHub pages. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+The steps to activate Github pages are as follows:
+- Navigate to the settings tab in the GitHub repository.
+- In the settings, navigate to the 'Pages' tab on the left of the page.
+- In the 'Build and deployment' section, select 'Deploy from a branch' in the source dropdown.
+- Select branch 'main' and click on 'Save'.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The live link can be found here: [Wise Dice](https://xh3ni.github.io/wise-dice/)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Development process
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- I started the program and repository using the Code Institute gitpod-full-template.
+- Then I regularly staged my changes using the command `git add .` and then committed the staged changes to my local repository using `git commit -m 'short descriptive message here'`. 
+- Finally, I would push the commits from my local repository up to the Github repository using the command `git push`.
+- With every push, Github automatically deploys my latest commit from the 'main' branch to the Github pages.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Credits  
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- The dice-images are taken from google, random dice images
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- The fonts are imported from [Google Fonts](https://fonts.google.com/).
 
-------
+## Acknowledgments
 
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+I would like to acknowledge the following people who have helped me along the way in completing my first milestone project:
+- My mentor, Jubril Akolade, for his advices and encouragement.

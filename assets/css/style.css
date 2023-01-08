@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+
+body {
+    background-color: #F3EADA;
+  }
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .dice {
+    text-align: center;
+    display: inline-block;
+  
+  }
+  
+  h1 {
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 6rem;
+    color: #003D34;
+  }
+  
+  p {
+    font-size: 2rem;
+    color: #003D34;
+    font-family: 'Indie Flower', cursive;
+  }
+  
+  img {
+    width: 80%;
+  }
+  
+  /* --------- Buttons */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.btn {
+    width: 220px;
+    height: 60px;
+    position: relative;
+    font-family: "Indie Flower", cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 150%;
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+#roll {
+    margin-top: 25px;
+    background-color: #003D34;
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+#roll:active,
+#roll:hover {
+    background-color: #13508d;
+}
+
+/* Current Result */
+.game-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game-result p {
+    font-size: 40px;
+}
+ /* footer */
+  footer {
+    margin-top: 2%;
+    color: #003D34;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+  
+  }
+  

@@ -88,3 +88,27 @@ footer {
     font-family: 'Indie Flower', cursive;
 
 }
+
+/* Media query */
+/* For medium and small screens */
+@media screen and (max-width: 753px){
+    .container {
+        width: 50%;
+    }
+    .dice {
+        width: 50%;
+        margin-top: -30px;
+    
+    }
+    
+    h1 {
+        text-shadow: 3px 0 #232931;
+        font-size: 3rem;
+    }
+    
+    footer p {
+        font-size: 100%;
+    }
+}
+
+

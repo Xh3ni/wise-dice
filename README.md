@@ -123,6 +123,9 @@ The live link can be found here: [Wise Dice](https://xh3ni.github.io/wise-dice/)
 
 - The fonts are imported from [Google Fonts](https://fonts.google.com/).
 
+- The Party Popper emoji is taken from [Emojipedia](https://emojipedia.org/party-popper/)
+- The Frowning Face emoji is taken from [Emojipedia](https://emojipedia.org/frowning-face/)
+
 ## Acknowledgments
 
 I would like to acknowledge the following people who have helped me along the way in completing my first milestone project:

@@ -4,6 +4,7 @@ body {
     background-color: #F3EADA;
 }
 
+/* Header and the Game Area */
 .container {
     width: 70%;
     margin: auto;
@@ -34,7 +35,7 @@ img {
     width: 80%;
 }
 
-/* --------- Buttons */
+/* Button */
 .center {
     display: flex;
     justify-content: center;
@@ -50,21 +51,19 @@ img {
     letter-spacing: 1.2px;
     font-size: 150%;
     color: white;
+    margin-top: 25px;
+    background-color: #003D34;
+    border: 1px transparent;
+    border-radius: 20px;
+
 }
 
 .btn:focus {
     outline: none;
 }
 
-#roll {
-    margin-top: 25px;
-    background-color: #003D34;
-    border: 1px transparent;
-    border-radius: 20px;
-}
-
-#roll:active,
-#roll:hover {
+.btn:active,
+.btn:hover {
     background-color: #13508d;
 }
 
@@ -91,24 +90,23 @@ footer {
 
 /* Media query */
 /* For medium and small screens */
-@media screen and (max-width: 753px){
+@media screen and (max-width: 753px) {
     .container {
         width: 50%;
     }
+
     .dice {
         width: 50%;
         margin-top: -30px;
-    
+
     }
-    
+
     h1 {
         text-shadow: 3px 0 #232931;
         font-size: 3rem;
     }
-    
+
     footer p {
         font-size: 100%;
     }
 }
-
-

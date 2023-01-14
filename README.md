@@ -1,17 +1,16 @@
 # Roll the Wise Dice
 
-Roll the Wise Dice is an online game designed for all age groups, for adults and children. The game is between you (the player) and the computer. The player can add their name.
-- To start the game you must click the "Start the Game" button.
+ Roll the Wise Dice is an online game designed for all age groups, adults and children. The game is between you (the player) and the computer. The player can add their name.
+- To start the game, you must click the "Start the Game" button.
 - Enter your name to access the game! 
 - After that let's play!
-- Click on "Roll the Dice" Button!
+- Click on the "Roll the Dice" Button!
 If the number on the player's dice is greater than the number on the computer's dice, congratulations, you are the winner. One point will be added to the score for you (the player).
 If the number on the player's dice is lower than the number on the computer's dice, you have lost, try again. One point will be added to the score for the computer.
 If the numbers on both dice are the same, it is a draw. The score does not change.
 The game can last for 7 dice rolls.
 - After 7 rollings the winner of the game will be shown!
-- A "new Game" button will start a neew game.
- 
+- A "New Game" button will start a new game.
 
 ![The Wise Dice shown on a range of devices](assets/docs/responisive-wise-dice.png)
 
@@ -105,7 +104,7 @@ Wireframes were created for desktop version of the game with the Program [Balsam
 ## Testing   
 
 ### Manual Testing  
-- I tested playing this game in different browsers: Chrome, Firefox, Edgeand Safari.
+- I tested playing this game in different browsers: Chrome, Firefox, Edge and Safari.
 - I confirmed that the game results are alwasy correct
 - I confirmed that the header, instructions, results and footer text are all readable and easy to understand.
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.

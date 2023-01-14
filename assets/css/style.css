@@ -11,31 +11,89 @@ body {
     text-align: center;
 }
 
+/* landing page layout */
+
+.intro-area {
+    width: 70%;
+    margin: auto;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+
+h1 {
+    margin: 30px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 6rem;
+    color: #003D34;
+    white-space: nowrap;
+}
+
+h2,
+h3 {
+    margin: 30px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: #003D34;
+    white-space: nowrap;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #003D34;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Start the game button */
+
+.button {
+    background-color: #003D34;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:active,
+.button:hover {
+    background-color: #13508d;
+}
+
+.hide {
+    display: none;
+}
+
+
 .dice {
     text-align: center;
     display: inline-block;
 
 }
 
-h1 {
-    margin: 30px;
-    font-family: 'Lobster', cursive;
-    text-shadow: 5px 0 #232931;
-    font-size: 6rem;
-    color: #003D34;
-}
-
-p {
-    font-size: 2rem;
-    color: #003D34;
-    font-family: 'Indie Flower', cursive;
-}
 
 img {
     width: 80%;
 }
 
-/* Button */
+/* Button Roll */
 .center {
     display: flex;
     justify-content: center;
@@ -73,6 +131,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: -50px;
 }
 
 .game-result p {
@@ -89,24 +148,14 @@ footer {
 }
 
 /* Media query */
-/* For medium and small screens */
-@media screen and (max-width: 753px) {
-    .container {
-        width: 50%;
-    }
 
-    .dice {
-        width: 50%;
-        margin-top: -30px;
-
-    }
-
+/* For big screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     h1 {
-        text-shadow: 3px 0 #232931;
-        font-size: 3rem;
+        font-size: 4rem;
+        text-shadow: 2px 0 #232931;
     }
 
-    footer p {
-        font-size: 100%;
-    }
 }
+
+

@@ -1,14 +1,51 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button element and add event listener
 
-document.addEventListener("DOMContentLoaded", function () {
-    var button = document.getElementById("roll");
-    button.addEventListener("click", function () {
-        rollDice();
+/**
+ * Defines "Let's Begin" button click event.
+ * Function to load game into the "game-area" section.
+ */
+var buttonStart = document.getElementById('btn-start');
+var gameArea = document.getElementById('game-area');
+var landingSection = document.getElementById('landing');
 
-    });
+function letsBegin() {
+    landingSection.style.display = 'none';
+    gameArea.style.display = 'block';
+}
+
+/**
+ * Count the clicks of the roll button
+ * If there are 7 clicks, end the game
+ */
+var clickCount = 0;
+var buttonRoll = document.getElementById("roll");
+buttonRoll.addEventListener("click", function () {
+    rollDice();
+    clickCount++;
+
+    if (clickCount == 7) {
+        if (playerScore == computerScore) {
+            Swal.fire("🎉You both are champions! 🎉");
+            buttonRoll.disabled = true;
+            buttonRoll.style.backgroundColor = 'grey';
+        } else if 
+            (playerScore > computerScore) {
+            Swal.fire("Hey you champion! 🎉 You won!");
+            buttonRoll.disabled = true;
+            buttonRoll.style.backgroundColor = 'grey';
+        } else {
+            Swal.fire("☹️ Try again!");
+            buttonRoll.disabled = true;
+            buttonRoll.style.backgroundColor = 'grey';
+        }
+    } else {
+        buttonRoll.disabled = false;
+    }
+
 });
 
+/**
+ * Main function to roll the dice
+ */
 function rollDice() {
     var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6 
     var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
@@ -28,12 +65,12 @@ function rollDice() {
      * If player win
      */
     if (randomNumber1 === randomNumber2) {
-        document.querySelector("h1").innerHTML = "Draw!";
+        document.querySelector("h2").innerHTML = "Draw!";
     } else if (randomNumber1 > randomNumber2) {
-        document.querySelector("h1").innerHTML = "You won! 🎉";
+        document.querySelector("h2").innerHTML = "You won! 🎉";
         incrementPlayerResult();
     } else if (randomNumber2 > randomNumber1) {
-        document.querySelector("h1").innerHTML = "Ohhh nooo.... ☹️ Try again!";
+        document.querySelector("h2").innerHTML = "Ohhh nooo.... ☹️!";
         incrementComputerResult();
     }
 }
@@ -41,15 +78,19 @@ function rollDice() {
 /**
  * Gets the current score from the DOM and increments it by 1
  */
+var playerScore = parseInt(document.getElementById("player-result").innerText);
+
 function incrementPlayerResult() {
-    var oldScore = parseInt(document.getElementById("player-result").innerText);
-    document.getElementById("player-result").innerText = ++oldScore;
+
+    document.getElementById("player-result").innerText = ++playerScore;
 }
 
 /**
  * Gets the current score from the DOM and increments Computers result by 1
  */
+var computerScore = parseInt(document.getElementById("computer-result").innerText);
+
 function incrementComputerResult() {
-    var oldScore = parseInt(document.getElementById("computer-result").innerText);
-    document.getElementById("computer-result").innerText = ++oldScore;
+
+    document.getElementById("computer-result").innerText = ++computerScore;
 }

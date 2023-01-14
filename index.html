@@ -13,36 +13,68 @@
 </head>
 
 <body>
-    <!-- Header and the game area -->
-    <div class="container">
+
+    <!-- Header -->
+    <header>
         <h1>Roll the Wise Dice</h1>
+    </header>
 
-        <div class="dice">
-            <p id="player">Player</p>
-            <img class="img1" src="assets/images/dice6.png" alt="Dice image">
+    <!--Landing page with game rules and playername entry-->
+    <section id="landing">
+        <div class="intro-area">
+            <div class="intro">
+                <h3>Welcome to "The Wise Dice" Game!</h3>
+                <h3>How to play?!</h3>
+                <p>- Click on "Start the Game"!</p>
+                <p>- Enter your name to access the game!</p>
+                <p>- And now let's play!</p>
+                <p>- Click on "Roll the Dice" Button!</p>
+                <p>- After 7 rollings the winner of the game will be shown!</p>
+                <div>
+                    <button id="button" class="button">Start the Game</button>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="dice">
-            <p id="computer">Computer</p>
-            <img class="img2" src="assets/images/dice6.png" alt="Dice image">
+
+    <!-- Game Area -->
+
+    <section id="game-area" class="hide">
+        <div class="container">
+            <div class="game-message">
+                <h2 id="feedback">Game Result</h2>
+            </div>
+            <div class="dice">
+                <p class="player-name" id="player">Player</p>
+                <img class="img1" src="assets/images/dice6.png" alt="Dice image">
+            </div>
+
+            <div class="dice">
+                <p id="computer">Computer</p>
+                <img class="img2" src="assets/images/dice6.png" alt="Dice image">
+            </div>
         </div>
-    </div>
-    <!-- Button for playing the game -->
-    <div class="center">
-        <button id="roll" class="btn">Roll</button>
-    </div>
-
-    <!-- Player & Computer Score at the end -->
-    <div class="game-result">
-        <p id="player-game-result">You: <span id="player-result">0</span>
+        <!--  Button for playing the game and for new game -->
+        <div class="center">
+            <button id="roll" class="btn">Roll</button>
+        </div>
+        <!--  Player & Computer Score at the end -->
+        <div class="game-result">
+            <p class="player-name" id="player-game-result">You: <span id="player-result">0 </span></p>
             <p id="computer-game-result">Computer: <span id="computer-result">0</span></p>
-    </div>
+        </div>
+    </section>
 
     <!-- Copyright -->
-    <footer>
-        <p>&copy;The Wise Dice 2023<p>
-    </footer>
+    <section>
+        <footer>
+            <p>&copy;The Wise Dice 2023<p>
+        </footer>
 
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

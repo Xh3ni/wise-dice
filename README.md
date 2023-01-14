@@ -60,7 +60,7 @@ The game can last for 7 dice rolls.
 - This section provides two images of dices and a button that the user can click to start and play the game. 
 
 ### The Game Results
-![The Game Results](assets/docs/game-results.PNG)
+![The Game Results](assets/docs/game-results.png)
 - When the user clicks the "Roll" button, the images of the dices shown a random dice number on the game board. 
 - If the number on the player's dice is greater than the number on the computer's dice, congratulations, you are the winner. 
 - One point will be added to the score for you (the player).
@@ -77,7 +77,7 @@ The game can last for 7 dice rolls.
 - If you want to start a new game, click the "New Game" button. 
 
 ### The Footer
-![Footer](assets/docs/footer.PNG)
+![Footer](assets/docs/footer.png)
 - The footer section shows the creator of the game.
 
 ## Wireframes  
@@ -115,7 +115,7 @@ Wireframes were created for desktop version of the game with the Program [Balsam
 ### Validatior Testing 
 #### HTML  
 ![Nu Html Checker](assets/docs/validators/html-validator.png)     
-There were no errors found on any page using the Nu HTML Checker. I used Nu HTML Checker because W3C HTML Validator there was an error from the page, Error 503
+There were no errors found on any page using the Nu HTML Checker. I used Nu HTML Checker because W3C HTML Validator there was an error from the page, Error 503.
 
 #### CSS  
 ![W3C CSS Validator](assets/docs/validators/css-validator.png)  

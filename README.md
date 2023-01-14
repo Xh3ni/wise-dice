@@ -1,20 +1,30 @@
 # Roll the Wise Dice
 
-Roll the Wise Dice is an online game designed for all age groups, for adults and children. The game is between you (the player) and the computer. To start the game you must click the "Roll" button. If the number on the player's dice is greater than the number on the computer's dice, congratulations, you are the winner. One point will be added to the score for you (the player).
+Roll the Wise Dice is an online game designed for all age groups, for adults and children. The game is between you (the player) and the computer. The player can add their name.
+- To start the game you must click the "Start the Game" button.
+- Enter your name to access the game! 
+- After that let's play!
+- Click on "Roll the Dice" Button!
+If the number on the player's dice is greater than the number on the computer's dice, congratulations, you are the winner. One point will be added to the score for you (the player).
 If the number on the player's dice is lower than the number on the computer's dice, you have lost, try again. One point will be added to the score for the computer.
 If the numbers on both dice are the same, it is a draw. The score does not change.
-The game can last indefinitely, there is no time limit.
-If you want to start a new game, refresh the page.
+The game can last for 7 dice rolls.
+- After 7 rollings the winner of the game will be shown!
+- A "new Game" button will start a neew game.
+ 
 
-![The Wise Dice shown on a range of devices](assets/docs/responisive-wise-dice.PNG)
+![The Wise Dice shown on a range of devices](assets/docs/responisive-wise-dice.png)
 
 
 ## Contents
 
 * [Features](#features)
   * [Header](#header)
+  * [Landing section](#landing-section)
+  * [Username section](#username-section)
   * [The Game Area](#game-area)
   * [The Game Results](#game-results)
+  * [Start new game](#new-game)
   * [The Footer](#footer)
 * [Wireframes](#wireframes)
 * [Design](#design)
@@ -32,12 +42,21 @@ If you want to start a new game, refresh the page.
 ## FEATURES  
 
 ### Header 
-![Header](assets/docs/header.PNG)
+![Header](assets/docs/header.png)
 - The header shows the game name: The Wise Dice. It is at the top of the page and clearly contrasts with the background.
-- When the game starts, the header change on: You Won!; Oh nooo... Try again!; Draw!; according to the result of the game.
 
-![The Game Area](assets/docs/game-area.PNG)
-- At the game area there are clear instructon to start and play the game. The player is against the Computer. To start the game all you need to do is to click the button "Roll". After that a message will appear at the header if you are won/loose/draw. 
+### Landing section
+![Landing section](assets/docs/landing-section.png)
+- The landing page shows the info and the rules for the game: The Wise Dice. At the bottom of landing-section is "Start the Game" button.
+
+### Username section
+![Username section](assets/docs/username-section.png)
+- The landing section is a popup that requires the name of the player. If the the name accomplish all the user criteria the "Let's play button shows."
+![Username section](assets/docs/lets-play.png)
+
+### The Game Area
+![The Game Area](assets/docs/game-area.png)
+- At the game area there are clear instructon to start and play the game. The player is against the Computer. To start the game all you need to do is to click the button "Roll". After that a message will appear at the "Game Result" if you won/lost/draw. 
 
 - This section provides two images of dices and a button that the user can click to start and play the game. 
 
@@ -49,9 +68,14 @@ If you want to start a new game, refresh the page.
 - If the number on the player's dice is lower than the number on the computer's dice, you have lost, try again. 
 - One point will be added to the score for the computer.
 - If the numbers on both dice are the same, it is a draw. - - The score does not change.
-- The game can last indefinitely, there is no time limit.
-- If you want to start a new game, refresh the page.
-- The results are clear to the user, making the game easy to play, undersand who won, and wha the score is.  
+- The game will end after the 7th roll of dices. 
+- An alert mesage will apear on the screen if you won the game or not.
+![The Game Result](assets/docs/feedback.png)
+- Roll Button is disabled and the color changes to grey.
+
+### Start New Game
+![Start new game](assets/docs/new-game.png)
+- If you want to start a new game, click the "New Game" button. 
 
 ### The Footer
 ![Footer](assets/docs/footer.PNG)
@@ -61,7 +85,10 @@ If you want to start a new game, refresh the page.
 
 Wireframes were created for desktop version of the game with the Program [Balsamiq](https://balsamiq.com/).
 
-[Image of the wireframes](assets/docs/wireframes/wireframes.PNG)
+![Image of the wireframes](assets/docs/wireframes/landing-section-wireframes.png)
+![Image of the wireframes](assets/docs/wireframes/playername-wireframes.png)
+![Image of the wireframes](assets/docs/wireframes/play-game-wireframes.png)
+
 
 ## Design  
 
@@ -83,7 +110,7 @@ Wireframes were created for desktop version of the game with the Program [Balsam
 - I confirmed that the header, instructions, results and footer text are all readable and easy to understand.
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 #### Lighthouse  
-![Lighthouse Validation](assets/docs/validators/lighthouse-raport.PNG)
+![Lighthouse Validation](assets/docs/validators/lighthouse-validator.png)
 
 
 ### Validatior Testing 
@@ -94,7 +121,7 @@ There were no errors found on any page using the W3C HTML Validator.
 ![W3C CSS Validator](assets/docs/validators/css-validator.PNG)  
 There were no errors found in the stylesheet using the W3C CSS Validator.
 #### JavaScript
-![JS Hint Validator](assets/docs/validators/js-validator.PNG)  
+![JS Hint Validator](assets/docs/validators/js-validator.png)  
 There were no errors found in the script using the JS Hint Validator. 
 
 ## Deployment  
@@ -125,6 +152,7 @@ The live link can be found here: [Wise Dice](https://xh3ni.github.io/wise-dice/)
 
 - The Party Popper emoji is taken from [Emojipedia](https://emojipedia.org/party-popper/)
 - The Frowning Face emoji is taken from [Emojipedia](https://emojipedia.org/frowning-face/)
+- I have used the Swal library for javascript Alert.(https://sweetalert2.github.io/#download) I add the script at index.html page.
 
 ## Acknowledgments
 

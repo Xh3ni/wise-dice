@@ -103,12 +103,12 @@ function rollDice() {
      * If player win
      */
     if (randomNumber1 === randomNumber2) {
-        document.querySelector("h2").innerHTML = "Draw!";
+        document.querySelector("#feedback").innerHTML = "Draw!";
     } else if (randomNumber1 > randomNumber2) {
-        document.querySelector("h2").innerHTML = "You won! 🎉";
+        document.querySelector("#feedback").innerHTML = "You won! 🎉";
         incrementPlayerResult();
     } else if (randomNumber2 > randomNumber1) {
-        document.querySelector("h2").innerHTML = "Ohhh nooo.... ☹️!";
+        document.querySelector("#feedback").innerHTML = "Ohhh nooo.... ☹️!";
         incrementComputerResult();
     }
 }

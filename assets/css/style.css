@@ -183,6 +183,36 @@ img {
     font-size: 40px;
 }
 
+/* New Game button */
+
+.new-game {
+    text-align: right;
+}
+.new-btn {
+    width: 220px;
+    height: 60px;
+    position: relative;
+    font-family: "Indie Flower", cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 150%;
+    color: white;
+    margin-top: 25px;
+    background-color: #479cd4;
+    border: 1px transparent;
+    border-radius: 50px;
+
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active,
+.btn:hover {
+    background-color: #13508d;
+}
+
 /* footer */
 footer {
     margin-top: 2%;

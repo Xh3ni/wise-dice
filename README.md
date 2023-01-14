@@ -118,7 +118,7 @@ Wireframes were created for desktop version of the game with the Program [Balsam
 ![W3C HTML Validator](assets/docs/validators/html-validator.png)     
 There were no errors found on any page using the W3C HTML Validator.
 #### CSS  
-![W3C CSS Validator](assets/docs/validators/css-validator.PNG)  
+![W3C CSS Validator](assets/docs/validators/css-validator.png)  
 There were no errors found in the stylesheet using the W3C CSS Validator.
 #### JavaScript
 ![JS Hint Validator](assets/docs/validators/js-validator.png)  

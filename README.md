@@ -92,7 +92,7 @@ Wireframes were created for desktop version of the game with the Program [Balsam
 ## Design  
 
 ### Colours  
-![Colour Palette](assets/docs/natural-palette.PNG)
+![Colour Palette](assets/docs/natural-palette.png)
 - The game uses a palette of Natural Palette.
 - The Tropical Rain Forest is used for heading, pharagraphs and the background-color of the button.
 - Parchment is used for the backgroung-color of the body.

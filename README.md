@@ -114,8 +114,9 @@ Wireframes were created for desktop version of the game with the Program [Balsam
 
 ### Validatior Testing 
 #### HTML  
-![W3C HTML Validator](assets/docs/validators/html-validator.png)     
-There were no errors found on any page using the W3C HTML Validator.
+![Nu Html Checker](assets/docs/validators/html-validator.png)     
+There were no errors found on any page using the Nu HTML Checker. I used Nu HTML Checker because W3C HTML Validator there was an error from the page, Error 503
+
 #### CSS  
 ![W3C CSS Validator](assets/docs/validators/css-validator.png)  
 There were no errors found in the stylesheet using the W3C CSS Validator.

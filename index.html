@@ -35,6 +35,26 @@
                 </div>
             </div>
         </div>
+
+        <!--  Modal -->
+        <div class="bg-modal">
+            <div class="modal-contents">
+                <div class="close">+</div>
+                <form id="username-form">
+                    <p>Hi! Let's start the Game. But first enter your name, please!
+                        I'm:</p>
+                    <input type="text" name="username" id="username-field" class="username-info"
+                        placeholder="Your Name">
+                    <input type="submit" value="OK" id="username-submit">
+                    <br>
+                    <span id="error-msg" class="hide"></span>
+                </form>
+                <div class="btn-area">
+                    <button data-type="start" id="btn-start" class="button hide" onclick="letsBegin()"> Hurray!!! Let's
+                        play!</button>
+                </div>
+            </div>
+        </div>
     </section>
 
 
